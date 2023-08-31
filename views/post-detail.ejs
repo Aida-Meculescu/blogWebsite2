@@ -32,19 +32,15 @@
         </p>
       </section>
       <section id="comments">
-
         <p>
           This post might have comments. You can load them if you want to view
           them.
         </p>
-
         <button id="load-comments-btn" class="btn btn-alt" data-postid="<%= post._id %>">Load Comments</button>
-
-
       </section>
       <section id="comments-form">
         <h2>Leave a comment</h2>
-        <form data-postid="" <%=post._id %>>
+        <form data-postid="<%= post._id %>">
           <div class="form-control">
             <label for="title">Comment title</label>
             <input type="text" id="title" name="title" required />
